@@ -1,0 +1,1 @@
+This a small project to assert HTML skills learned during the Odin Project steps.

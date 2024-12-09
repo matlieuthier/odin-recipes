@@ -3,21 +3,70 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 body{
     background-image: url('../../odin-recipes/images/background-img.jpg');
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     background-color: #f0f0f0;
 }
+.polaroid {
+    text-align: center;
+    background-color: white;
+    border: 10px solid #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    width: 450px; /* Set a fixed width for the Polaroid */
+    height: 350px; /* Set a fixed height to match the typical Polaroid aspect ratio */
+    padding-bottom: 20px; /* Space for the bottom label */
+    margin: 30px;
+    transform: rotate(-2deg); /* Slight tilt to mimic the retro feel */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    justify-self: center;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the frame and is cropped if necessary */
+    display: block;
+    border-bottom: 5px solid #ddd; /* Border separating the image from the caption */
+}
+
+.polaroid .caption {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 0 10px; /* Add padding around the caption for better alignment */
+}
+
+.Container-img-description , .Container-Igredients, .Container-Steps {
+    justify-self: center;
+    max-width: 800px;
+}
+h1, h2 , h3, h4 {
+    color: wheat;
+    text-shadow: 1px 1px 4px steelblue;
+    margin: 20px 0; 
+    letter-spacing: 1.5px;
+}
 
 h1{
-    justify-self: center;
-    color: wheat;
-    text-shadow: 1px 1px 2px steelblue;
     font-size: 65px;
-    margin: 20px 0; 
-    text-align: center;
-    letter-spacing: 1.5px;
+    justify-self: center;
+}
 
+h2{font-size: 55px;}
+h3{font-size: 45px;}
+h4{font-size: 30px;}
+
+span, li {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+li{
+    padding-bottom:45px;
 }

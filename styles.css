@@ -1,0 +1,8 @@
+* {
+    font-family: "Dancing Script",cursive, Serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+h1, .recipesContainer{
+    justify-self: center;
+}
